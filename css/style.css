@@ -1,0 +1,294 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	/* padding: 0px; */
+}
+
+.header
+{   
+	width: 100%;
+	height: 90vh;
+	background-image: url("../image/background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: static;
+
+
+}
+.nav_csi h1{
+	cursor: pointer;
+	color: #D1CBCB;
+	font-family: 'Raleway',sans-serif;
+	font-weight: 500;
+	padding-left: 20px;
+	letter-spacing: 2px;
+	margin-top: 5px;
+	position: fixed;
+	z-index: 11;
+	display: inline;
+}
+
+.logo{
+	display:block;
+	opacity: 0.9;
+	z-index: 10;
+	-webkit-transition: -webkit-transform 0.3s;
+}
+
+.logo:hover{
+	-webkit-transform: rotate(1440deg) scale(1.2) translateZ(0);  
+}
+
+
+
+
+.header_item{
+	
+	width: 100%;
+	height: 90vh;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 500%;
+
+} 
+#logo1{
+
+	margin-top: 20px;
+	width:10rem;
+	height:10rem;
+	opacity: .9;
+}
+#logo2{
+	height: auto;
+	width: 50%;
+	
+}
+#btn1,#btn2 {
+
+
+	margin: 0 2rem;
+	padding: 1.5rem 2rem;
+
+	border: 2px ;
+	letter-spacing: 2px;
+	display: flex;
+	align-items: center;
+	border-radius: 100px; 
+	display: inline-block;
+	font-size: 1rem;
+	border: 2px solid white;
+	cursor: pointer;
+	
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+}
+#btn1:hover,#btn2:hover
+{
+	background-color: #E7E7E7; color: black;
+}
+.container{
+	display: flex;
+	width: 100%;
+	height: 70rem;
+	background-color: #C9C8C8;
+	flex-direction: column;
+
+	margin:auto;
+
+
+
+}
+.box{
+
+	width: 78%;
+	background-color: white;
+	height:16rem;
+	box-shadow: 0 1rem 3rem rgba(0,0,0,0.3);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	margin-bottom: 50px;
+
+
+
+}
+
+.content{
+
+	height: 17rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	overflow: hidden;
+	background: #fff;
+}
+.rule_btn{
+	color: #17DF9B;
+	background-color: white;
+	border: 2px solid #17DF9B;
+	padding: 4px ;
+	margin: 1px ;
+	size: 1rem;
+	letter-spacing:1px ;
+
+	font-weight: bold;
+}
+.rule_btn:hover{
+	background-color: #1AE49A; color: white;
+
+}
+.round_paragraph1{
+
+
+	width:auto;
+
+	margin-left: 50px;
+	font-size:100%;
+	color: gray;
+	margin-top: 0px;
+
+}
+
+.round_heading{
+	color: #302D2D;
+
+}
+.domain{
+	color: #302D2D;
+}
+.img1{ 
+	margin-top: 0px;
+	margin-left: 20px;
+	float: right;
+	width: 15rem;
+	height: 20rem;
+	position: relative;
+	overflow: hidden;
+	margin-right: -40px;
+
+	clip-path: polygon(50% 0%,100% 0%,100% 100%,0% 100%);
+}
+.round_img{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.round_paragraph3{
+	width:auto;
+
+	margin-left: 50px;
+	font-size:100%;
+	color: gray;
+	margin-top: 0px;
+
+}
+.img3{ 
+	margin-top: 0px;
+	margin-left: 20px;
+	float: right;
+	width: 15rem;
+	height: 20rem;
+	position: relative;
+	overflow: hidden;
+	margin-right: -40px;
+	clip-path: polygon(50% 0%,100% 0%,100% 100%,0% 100%);
+}
+.round_paragraph2{
+	width:auto;
+
+	margin-right: 20px;
+	font-size:100%;
+	color: gray;
+	margin-top: 0px;
+
+}
+.img2{ 
+	margin-top: 0px;
+	margin-left: 20px;
+	float: left;
+	width: 15rem;
+	height: 20rem;
+	position: relative;
+	overflow: hidden;
+	margin-left: -40px;
+	clip-path: polygon(0 0,51% 0,100% 100%,0 100%);
+}
+
+
+.footer{
+	height: 25%;
+	width: 100%;   
+}
+@keyframes updown {
+	0% {
+		transform: translateY(-30%) ;
+	}
+
+	50% {
+		transform: translateY(-80%);
+	}
+
+	100% {
+		transform: translateY(-30%);
+	}
+}
+
+.footer_section{
+	height: 8rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.footer_img img{
+	background: linear-gradient(rgb(2, 202, 69),rgba(18, 200, 2, .2)),url("../image/footer.png");
+	width: 100%;
+	height: 800%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation:updown 8s infinite;   
+}
+
+.link_icons{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	z-index: 1;    
+}
+
+.link_icons img{
+	height: 43px;
+	width: 44px;
+	padding: 8px;
+	margin-left: 4px;
+	margin-top: -10rem;
+	border-bottom: 2px dotted white;
+	z-index: 1;
+	-webkit-transition: -webkit-transform 0.3s;
+
+}
+
+.link_icons img:hover{
+	cursor: pointer;
+	-webkit-transform: rotate(360deg) scale(1.2);
+}
+
+
+
+
+.foot_head h6{
+	background-color: rgb(24, 109, 69);
+	padding: 5px;
+	font-size: 10px;
+	font-weight: 200;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	text-align: center;
+
+}
+
